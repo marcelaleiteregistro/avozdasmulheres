@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+        /* Imagem para dispositivos móveis */
+        @media (max-width: 768px) {
+            .desktop-image {
+                display: none;
+            }
+            .mobile-image {
+                display: block;
+            }
+        }
+        /* Imagem para desktop */
+        @media (min-width: 769px) {
+            .desktop-image {
+                display: block;
+            }
+            .mobile-image {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="site_marcela.jpg" alt="Imagem para Desktop" class="image desktop-image">
+    <img src="site_marcela_mobile.jpg" alt="Imagem para Mobile" class="image mobile-image">
+</body>
+</html>
